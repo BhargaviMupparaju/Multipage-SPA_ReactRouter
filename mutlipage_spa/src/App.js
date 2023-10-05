@@ -12,9 +12,9 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			//we can wrap the routes as the children to the rootlayout
-			{ path: "/", element: <Homepage /> },
-			{ path: "/products", element: <Productspage /> },
-			{ path: "/products/:productId", element: <ProductDetailPage /> },
+			{ path: "", element: <Homepage /> },
+			{ path: "products", element: <Productspage /> },
+			{ path: "products/:productId", element: <ProductDetailPage /> }, //If we have / before the pathname it will be absolute path
 			// if we have dynamic changing parameters in the path we can give using :parameterid
 		],
 	},
